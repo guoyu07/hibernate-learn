@@ -20,6 +20,7 @@ public class Phone {
 	private Integer id;
 	
     @ElementCollection
+    //@OrderColumn添加一个专有字段    @OrderBy 实体类的一个熟悉
     @OrderColumn(name = "order_id")
     private List<String> phones = new ArrayList<String>();
     
